@@ -27,5 +27,13 @@
 <h1>StaticPages#privacy_policy</h1>
 <p>Find me in app/views/static_pages/privacy_policy.html.erb</p>
 <%# = link_to 'Landing Page',static_pages_landing_page_path %>
-<%= link_to 'Home',root_path%>
+<%= link_to root_path do %>
+<i class="fas fa-home"></i>
+Home
+<% end %>
+
+<%= link_to root_path,class:'btn btn-lg btn-success' do %>
+  <i class="fas fa-home"></i>
+  Home
+  <% end %>
 </div>
